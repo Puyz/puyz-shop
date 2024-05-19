@@ -45,7 +45,7 @@ namespace PuyzShop.Catalog.Services.ProductServices
 
         public async Task UpdateProductAsync(UpdateProductDto updateProductDto)
         {
-            var value = _mapper.Map<Product>(updateProductDto));
+            var value = _mapper.Map<Product>(updateProductDto);
             await _productCollection.FindOneAndReplaceAsync(p => p.ProductId.Equals(updateProductDto.ProductId), value);
         }
     }
