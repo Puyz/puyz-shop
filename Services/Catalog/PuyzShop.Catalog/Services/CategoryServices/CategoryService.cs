@@ -37,7 +37,7 @@ namespace PuyzShop.Catalog.Services.CategoryServices
 
         public async Task<GetByIdCategoryDto> GetByIdCategoryAsync(string id)
         {
-            var value = await _categoryCollection.Find<Category>(c => c.CategoryId.Equals(id)).FirstOrDefaultAsync();
+            var value = await _categoryCollection.Find(c => c.CategoryId.Equals(id)).FirstOrDefaultAsync();
             return _mapper.Map<GetByIdCategoryDto>(value);
         }
 
