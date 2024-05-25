@@ -6,4 +6,12 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Features\Mediator\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PuyzShop.Order.Domain\PuyzShop.Order.Domain.csproj" />
+  </ItemGroup>
+
 </Project>
