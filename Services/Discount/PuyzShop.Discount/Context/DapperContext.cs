@@ -18,7 +18,7 @@ namespace PuyzShop.Discount.Context
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Server=localhost;initial Catalog=PuyzShopDiscountDb;integrated Security=true");
+            optionsBuilder.UseSqlServer(_connectionString);
         }
 
         public DbSet<Coupon> Coupons { get; set; }
