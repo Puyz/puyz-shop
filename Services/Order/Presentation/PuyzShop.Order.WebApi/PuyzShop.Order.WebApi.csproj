@@ -11,7 +11,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
+    <ProjectReference Include="..\..\Core\PuyzShop.Order.Application\PuyzShop.Order.Application.csproj" />
+    <ProjectReference Include="..\..\Core\PuyzShop.Order.Domain\PuyzShop.Order.Domain.csproj" />
+    <ProjectReference Include="..\..\Infrastructure\PuyzShop.Order.Persistence\PuyzShop.Order.Persistence.csproj" />
   </ItemGroup>
 
 </Project>
