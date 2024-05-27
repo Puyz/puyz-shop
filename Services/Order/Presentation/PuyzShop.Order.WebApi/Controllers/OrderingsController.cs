@@ -1,9 +1,7 @@
 ﻿using MediatR;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using PuyzShop.Order.Application.Features.Mediator.Commands.OrderingCommands;
 using PuyzShop.Order.Application.Features.Mediator.Queries.OrderingQueries;
-using PuyzShop.Order.Application.Features.Mediator.Results.OrderingResults;
 
 namespace PuyzShop.Order.WebApi.Controllers
 {

@@ -7,7 +7,7 @@ namespace PuyzShop.Order.Persistence.Context
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Server=...;initial Catalog=PuyzShopOrderDb;integrated Security=true");
+            optionsBuilder.UseSqlServer("Server=localhost,1434;initial Catalog=PuyzShopOrderDb;User=sa;Password=123123123Aa.");
         }
 
         public DbSet<Address> Addresses { get; set; }

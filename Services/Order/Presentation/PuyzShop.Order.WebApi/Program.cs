@@ -2,6 +2,7 @@ using PuyzShop.Order.Application.Features.CQRS.Handlers.AddressHandlers;
 using PuyzShop.Order.Application.Features.CQRS.Handlers.OrderDetailHandlers;
 using PuyzShop.Order.Application.Interfaces;
 using PuyzShop.Order.Application.Services;
+using PuyzShop.Order.Persistence.Context;
 using PuyzShop.Order.Persistence.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -24,6 +25,8 @@ builder.Services.AddScoped<UpdateOrderDetailCommandHandler>();
 builder.Services.AddScoped<RemoveOrderDetailCommandHandler>();
 #endregion
 
+
+builder.Services.AddDbContext<OrderContext>();
 
 
 builder.Services.AddControllers();
