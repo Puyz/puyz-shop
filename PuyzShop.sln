@@ -21,13 +21,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastru
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{E929DF10-250E-48AA-9F53-05D36690D5EC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PuyzShop.Order.Domain", "Services\Order\Core\PuyzShop.Order.Domain\PuyzShop.Order.Domain.csproj", "{8F979F3B-C0BF-4F02-8624-7DDAE29578E0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PuyzShop.Order.Domain", "Services\Order\Core\PuyzShop.Order.Domain\PuyzShop.Order.Domain.csproj", "{8F979F3B-C0BF-4F02-8624-7DDAE29578E0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PuyzShop.Order.Application", "Services\Order\Core\PuyzShop.Order.Application\PuyzShop.Order.Application.csproj", "{E37E250D-DAF9-4B66-B2D8-AAAD92266A27}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PuyzShop.Order.Application", "Services\Order\Core\PuyzShop.Order.Application\PuyzShop.Order.Application.csproj", "{E37E250D-DAF9-4B66-B2D8-AAAD92266A27}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PuyzShop.Order.Persistence", "Services\Order\Infrastructure\PuyzShop.Order.Persistence\PuyzShop.Order.Persistence.csproj", "{BFA1AF96-4927-41C2-8BCA-B90FB26E3CF2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PuyzShop.Order.Persistence", "Services\Order\Infrastructure\PuyzShop.Order.Persistence\PuyzShop.Order.Persistence.csproj", "{BFA1AF96-4927-41C2-8BCA-B90FB26E3CF2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PuyzShop.Order.WebApi", "Services\Order\Presentation\PuyzShop.Order.WebApi\PuyzShop.Order.WebApi.csproj", "{5107DE55-B2E7-4FAC-8CC6-7303B578980F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PuyzShop.Order.WebApi", "Services\Order\Presentation\PuyzShop.Order.WebApi\PuyzShop.Order.WebApi.csproj", "{5107DE55-B2E7-4FAC-8CC6-7303B578980F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "IdentityServer", "IdentityServer", "{9AFAABDA-A4D9-4E79-B575-26C4F231B275}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PuyzShop.IdentityServer", "IdentityServer\PuyzShop.IdentityServer\PuyzShop.IdentityServer.csproj", "{A337CB04-24A6-4A10-BCE9-BDFBEBF9CDDD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -59,6 +63,10 @@ Global
 		{5107DE55-B2E7-4FAC-8CC6-7303B578980F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5107DE55-B2E7-4FAC-8CC6-7303B578980F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5107DE55-B2E7-4FAC-8CC6-7303B578980F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A337CB04-24A6-4A10-BCE9-BDFBEBF9CDDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A337CB04-24A6-4A10-BCE9-BDFBEBF9CDDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A337CB04-24A6-4A10-BCE9-BDFBEBF9CDDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A337CB04-24A6-4A10-BCE9-BDFBEBF9CDDD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -76,6 +84,7 @@ Global
 		{E37E250D-DAF9-4B66-B2D8-AAAD92266A27} = {4ADA3E4B-9EE0-404C-AD77-49A2DD6CC70E}
 		{BFA1AF96-4927-41C2-8BCA-B90FB26E3CF2} = {9D37E950-F4F6-4AAC-AD57-623E08C4D494}
 		{5107DE55-B2E7-4FAC-8CC6-7303B578980F} = {E929DF10-250E-48AA-9F53-05D36690D5EC}
+		{A337CB04-24A6-4A10-BCE9-BDFBEBF9CDDD} = {9AFAABDA-A4D9-4E79-B575-26C4F231B275}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DB73025F-842B-42C2-B450-ADBD18427880}
