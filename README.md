@@ -5,12 +5,12 @@ ASP.NET Core Microservices
 
     > MongoDB
     >
-    > N-Tier Architecture
+    
 - Discount
   
     > MSSQL
     > 
-    > N-Tier Architecture
+    
 - Order
   
     > MSSQL
