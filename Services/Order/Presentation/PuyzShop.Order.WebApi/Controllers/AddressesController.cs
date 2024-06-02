@@ -1,10 +1,12 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using PuyzShop.Order.Application.Features.CQRS.Commands.AddressCommands;
 using PuyzShop.Order.Application.Features.CQRS.Handlers.AddressHandlers;
 using PuyzShop.Order.Application.Features.CQRS.Queries.AddressQueries;
 
 namespace PuyzShop.Order.WebApi.Controllers
 {
+    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class AddressesController : ControllerBase

@@ -1,9 +1,11 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using PuyzShop.Discount.Dtos;
 using PuyzShop.Discount.Services;
 
 namespace PuyzShop.Discount.Controllers
 {
+    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class DiscountsController : ControllerBase
@@ -15,6 +17,7 @@ namespace PuyzShop.Discount.Controllers
             _discountService = discountService;
         }
 
+        
         [HttpGet("getAll")]
         public async Task<IActionResult> DiscountCouponList()
         {

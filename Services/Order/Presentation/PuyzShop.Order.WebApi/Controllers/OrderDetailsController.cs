@@ -1,11 +1,12 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using PuyzShop.Order.Application.Features.CQRS.Commands.OrderDetailCommands;
-using PuyzShop.Order.Application.Features.CQRS.Handlers.OrderDetailHandlers;
 using PuyzShop.Order.Application.Features.CQRS.Handlers.OrderDetailHandlers;
 using PuyzShop.Order.Application.Features.CQRS.Queries.OrderDetailQueries;
 
 namespace PuyzShop.Order.WebApi.Controllers
 {
+    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class OrderDetailsController : ControllerBase

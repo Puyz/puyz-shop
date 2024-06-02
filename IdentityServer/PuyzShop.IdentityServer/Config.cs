@@ -14,7 +14,8 @@ namespace PuyzShop.IdentityServer
         {
             new ApiResource("ResourceCatalog") { Scopes = {"CatalogFullPermission", "CatalogReadPermission" } },
             new ApiResource("ResourceDiscount"){ Scopes = {"DiscountFullPermission" }},
-            new ApiResource("ResourceOrder") { Scopes = {"OrdertFullPermission" } }
+            new ApiResource("ResourceOrder") { Scopes = {"OrderFullPermission" } },
+            new ApiResource(IdentityServerConstants.LocalApi.ScopeName),
         };
 
         public static IEnumerable<IdentityResource> IdentityResources => new IdentityResource[]
@@ -35,6 +36,8 @@ namespace PuyzShop.IdentityServer
 
             // order
             new ApiScope("OrderFullPermission", "Full authority for order operations"),
+
+            new ApiScope(IdentityServerConstants.LocalApi.ScopeName),
         };
 
         public static IEnumerable<Client> Clients => new Client[]
@@ -56,7 +59,7 @@ namespace PuyzShop.IdentityServer
                 ClientName = "Puyz Shop Manager User",
                 AllowedGrantTypes = GrantTypes.ClientCredentials,
                 ClientSecrets = { new Secret("puyzshopsecret".Sha256()) },
-                AllowedScopes = { "CatalogFullPermission" }
+                AllowedScopes = { "DiscountFullPermission" }
             },
 
             // Admin
