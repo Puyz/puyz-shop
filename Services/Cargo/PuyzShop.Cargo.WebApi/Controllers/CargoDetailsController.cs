@@ -1,10 +1,12 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using PuyzShop.Cargo.BusinessLayer.Abstract;
 using PuyzShop.Cargo.DtoLayer.Dtos.CargoDetailDtos;
 using PuyzShop.Cargo.EntityLayer.Concrete;
 
 namespace PuyzShop.Cargo.WebApi.Controllers
 {
+    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class CargoDetailsController : ControllerBase
