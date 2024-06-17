@@ -16,6 +16,7 @@ namespace PuyzShop.IdentityServer
             new ApiResource("ResourceDiscount") { Scopes = { "DiscountFullPermission" }},
             new ApiResource("ResourceOrder")    { Scopes = { "OrderFullPermission" } },
             new ApiResource("ResourceCargo")    { Scopes = { "CargoFullPermission" } },
+            new ApiResource("ResourceBasket")   { Scopes = { "BasketFullPermission" } },
             new ApiResource(IdentityServerConstants.LocalApi.ScopeName),
         };
 
@@ -41,6 +42,9 @@ namespace PuyzShop.IdentityServer
             // cargo
             new ApiScope("OrderFullPermission", "Full authority for order operations"),
 
+            // basket
+            new ApiScope("BasketFullPermission", "Full authority for basket operations"),
+
             new ApiScope(IdentityServerConstants.LocalApi.ScopeName),
         };
 
@@ -61,7 +65,7 @@ namespace PuyzShop.IdentityServer
             {
                 ClientId = "PuyzShopManagerId",
                 ClientName = "Puyz Shop Manager User",
-                AllowedGrantTypes = GrantTypes.ClientCredentials,
+                AllowedGrantTypes = GrantTypes.ResourceOwnerPassword,
                 ClientSecrets = { new Secret("puyzshopsecret".Sha256()) },
                 AllowedScopes = { "DiscountFullPermission" }
             },
@@ -71,10 +75,10 @@ namespace PuyzShop.IdentityServer
             {
                 ClientId = "PuyzShopAdminId",
                 ClientName = "Puyz Shop Admin User",
-                AllowedGrantTypes = GrantTypes.ClientCredentials,
+                AllowedGrantTypes = GrantTypes.ResourceOwnerPassword,
                 ClientSecrets = { new Secret("puyzshopsecret".Sha256()) },
                 AllowedScopes = {
-                "CatalogFullPermission", "DiscountFullPermission", "OrderFullPermission", "CargoFullPermission",
+                "CatalogFullPermission", "DiscountFullPermission", "OrderFullPermission", "CargoFullPermission","BasketFullPermission",
                 IdentityServerConstants.LocalApi.ScopeName,
                 IdentityServerConstants.StandardScopes.Email,
                 IdentityServerConstants.StandardScopes.OpenId,

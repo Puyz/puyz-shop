@@ -35,15 +35,19 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PuyzShop.IdentityServer", "
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Cargo", "Cargo", "{6E01D0B4-CCF8-4F8B-B73D-600FF5DAF467}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PuyzShop.Cargo.BusinessLayer", "Services\Cargo\PuyzShop.Cargo.BusinessLayer\PuyzShop.Cargo.BusinessLayer.csproj", "{C6632D1A-6045-4ACC-BE85-A593BC6CE6EA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PuyzShop.Cargo.BusinessLayer", "Services\Cargo\PuyzShop.Cargo.BusinessLayer\PuyzShop.Cargo.BusinessLayer.csproj", "{C6632D1A-6045-4ACC-BE85-A593BC6CE6EA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PuyzShop.Cargo.EntityLayer", "Services\Cargo\PuyzShop.Cargo.EntityLayer\PuyzShop.Cargo.EntityLayer.csproj", "{DC39C3D7-C834-456D-A536-5CD32F84BBF4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PuyzShop.Cargo.EntityLayer", "Services\Cargo\PuyzShop.Cargo.EntityLayer\PuyzShop.Cargo.EntityLayer.csproj", "{DC39C3D7-C834-456D-A536-5CD32F84BBF4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PuyzShop.Cargo.DataAccessLayer", "Services\Cargo\PuyzShop.Cargo.DataAccessLayer\PuyzShop.Cargo.DataAccessLayer.csproj", "{12C5A521-5080-48BF-91FE-C97F4B00FBAB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PuyzShop.Cargo.DataAccessLayer", "Services\Cargo\PuyzShop.Cargo.DataAccessLayer\PuyzShop.Cargo.DataAccessLayer.csproj", "{12C5A521-5080-48BF-91FE-C97F4B00FBAB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PuyzShop.Cargo.DtoLayer", "Services\Cargo\PuyzShop.Cargo.DtoLayer\PuyzShop.Cargo.DtoLayer.csproj", "{0E183EBB-13F3-4F01-85FB-9DCB674571D7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PuyzShop.Cargo.DtoLayer", "Services\Cargo\PuyzShop.Cargo.DtoLayer\PuyzShop.Cargo.DtoLayer.csproj", "{0E183EBB-13F3-4F01-85FB-9DCB674571D7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PuyzShop.Cargo.WebApi", "Services\Cargo\PuyzShop.Cargo.WebApi\PuyzShop.Cargo.WebApi.csproj", "{D33CEF61-D601-4C23-B533-845343A85401}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PuyzShop.Cargo.WebApi", "Services\Cargo\PuyzShop.Cargo.WebApi\PuyzShop.Cargo.WebApi.csproj", "{D33CEF61-D601-4C23-B533-845343A85401}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Basket", "Basket", "{D661C0BB-09E6-4A45-B773-1175FD80B9AA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PuyzShop.Basket", "Services\Basket\PuyzShop.Basket\PuyzShop.Basket.csproj", "{D787866E-ACF5-4BD5-9092-3C990456D1C9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -99,6 +103,10 @@ Global
 		{D33CEF61-D601-4C23-B533-845343A85401}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D33CEF61-D601-4C23-B533-845343A85401}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D33CEF61-D601-4C23-B533-845343A85401}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D787866E-ACF5-4BD5-9092-3C990456D1C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D787866E-ACF5-4BD5-9092-3C990456D1C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D787866E-ACF5-4BD5-9092-3C990456D1C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D787866E-ACF5-4BD5-9092-3C990456D1C9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -123,6 +131,8 @@ Global
 		{12C5A521-5080-48BF-91FE-C97F4B00FBAB} = {6E01D0B4-CCF8-4F8B-B73D-600FF5DAF467}
 		{0E183EBB-13F3-4F01-85FB-9DCB674571D7} = {6E01D0B4-CCF8-4F8B-B73D-600FF5DAF467}
 		{D33CEF61-D601-4C23-B533-845343A85401} = {6E01D0B4-CCF8-4F8B-B73D-600FF5DAF467}
+		{D661C0BB-09E6-4A45-B773-1175FD80B9AA} = {E6C2BF9B-6317-4DB3-A51A-389C67BD73B7}
+		{D787866E-ACF5-4BD5-9092-3C990456D1C9} = {D661C0BB-09E6-4A45-B773-1175FD80B9AA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DB73025F-842B-42C2-B450-ADBD18427880}
