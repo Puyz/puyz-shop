@@ -1,0 +1,57 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/UILayout/UILayout.cshtml";
+}
+
+<!-- Breadcrumb Start -->
+<div class="container-fluid">
+    <div class="row px-xl-5">
+        <div class="col-12">
+            <nav class="breadcrumb bg-light mb-30">
+                <a class="breadcrumb-item text-dark" href="#">Ana Sayfa</a>
+                <a class="breadcrumb-item text-dark" href="#">Ürünler</a>
+                <span class="breadcrumb-item active">Ürün Listesi</span>
+            </nav>
+        </div>
+    </div>
+</div>
+<!-- Breadcrumb End -->
+<!-- Shop Start -->
+<div class="container-fluid">
+    <div class="row px-xl-5">
+        <!-- Shop Sidebar Start -->
+        <div class="col-lg-3 col-md-4">
+
+            <!-- Price Start -->
+            @await Component.InvokeAsync("ProductListPriceFilterComponentPartial")
+            <!-- Price End -->
+
+            <!-- Color Start -->
+            @await Component.InvokeAsync("ProductListColorFilterComponentPartial")
+            <!-- Color End -->
+
+            <!-- Size Start -->
+            @await Component.InvokeAsync("ProductListSizeFilterComponentPartial")
+            
+            
+            <!-- Size End -->
+
+        </div>
+        <!-- Shop Sidebar End -->
+        <!-- Shop Product Start -->
+        <div class="col-lg-9 col-md-8">
+            <div class="row pb-3">
+                @await Component.InvokeAsync("ProductListGetProductCountComponentPartial")
+               
+                @await Component.InvokeAsync("ProductListComponentPartial")
+
+                @await Component.InvokeAsync("ProductListPaginationComponentPartial")
+                
+            </div>
+        </div>
+        <!-- Shop Product End -->
+    </div>
+</div>
+<!-- Shop End -->
+
